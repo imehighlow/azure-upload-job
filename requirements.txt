@@ -1,0 +1,3 @@
+azure-blob-storage-wrapper @ git+https://github.com/imehighlow/azure-blob-storage-wrapper.git
+simple-logger @ git+https://github.com/imehighlow/simple-logger.git
+telegram-notifier @ git+https://github.com/imehighlow/telegram-notifier.git
