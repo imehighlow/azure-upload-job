@@ -13,8 +13,8 @@ cd /home/$USER/dev/azure-upload-job
 ### 2. Setup Python environment
 ```bash
 # Create virtual environment and install dependencies
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -33,14 +33,14 @@ crontab -e
 
 Add this line:
 ```
-0 23 * * 4 cd /home/$USER/dev/azure-upload-job && /home/$USER/dev/azure-upload-job/venv/bin/python main.py
+0 23 * * 4 cd /home/$USER/dev/azure-upload-job && /home/$USER/dev/azure-upload-job/.venv/bin/python main.py
 ```
 
 ### 5. Test the script
 ```bash
 # Manual test
 cd /home/$USER/dev/azure-upload-job
-./venv/bin/python main.py
+./.venv/bin/python main.py
 ```
 
 ## Configuration
