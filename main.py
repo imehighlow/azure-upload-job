@@ -34,8 +34,8 @@ def main():
                 logger.info(f"Uploaded {file}")
                 uploaded.append(file)
     
-    message = f"Uploaded: {uploaded}" if uploaded else "No new files uploaded to Azure"
-    telegram.send_message(message)
+    message = f"Uploaded:\n{'\n'.join(uploaded)}" if uploaded else "No new files uploaded to Azure"
+    telegram.info(message)
 
 if __name__ == "__main__":
     main()
